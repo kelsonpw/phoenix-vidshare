@@ -15,6 +15,6 @@ defmodule CatcastsWeb.NavigationTest do
       |> assign(:user, user)
       |> get("/")
 
-    assert html_response(conn, 200)
+    assert html_response(conn, 200) =~ "Sign out"
   end
 end
