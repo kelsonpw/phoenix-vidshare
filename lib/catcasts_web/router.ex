@@ -23,5 +23,6 @@ defmodule CatcastsWeb.Router do
     pipe_through :browser
 
     get "/:provider", SessionController, :request
+    get "/:provider/callback", SessionController, :create
   end
 end
